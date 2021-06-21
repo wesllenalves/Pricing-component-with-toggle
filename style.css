@@ -29,6 +29,8 @@ body ul {
 
 .container h3 { 
     font-size: 30px;
+    margin-top: -30px;
+    margin-bottom: 60px;
 }
 
 .container .toggle-content{
@@ -36,13 +38,20 @@ body ul {
     flex-direction: row;
     font-size: 15px;
     font-weight: 400;
+    margin-bottom: 80px;
 }
 
 .container .toggle-content span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 10px;
 }
 
 .container .toggle-content span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
 }
 

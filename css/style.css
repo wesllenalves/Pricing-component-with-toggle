@@ -13,7 +13,7 @@ body {
     font-size: 15px;
     color: hsl(232, 13%, 33%);
     background-color: hsl(240, 78%, 98%);
-    background-image: url('./images/bg-bottom.svg'), url('./images/bg-top.svg');
+    background-image: url('../images/bg-bottom.svg'), url('../images/bg-top.svg');
     background-repeat: no-repeat;
     background-position: bottom left, top right;
     background-position-y: 70vh, 0;
@@ -24,24 +24,8 @@ body ul {
     padding: 0;
 }
 
-.container {
-    width: 100%;
-    margin: 75px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    position: relative;
-}
-
-.container h3 { 
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+.container h3 {    
     color: hsl(233, 13%, 49%);
-}
-
-.toggle-content {
-    margin-bottom: 50px;
 }
 
 .container .toggle-content{
@@ -98,17 +82,13 @@ body ul {
 
 .toggle:checked + label {
     background: rgba(105,111,221,1);
-    
 }
 
 .toggle:checked + label:before {
     content: '';
     left: calc(100% - 28px);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
-    
 }
-
-
 
 .cards { 
     width: 100%;
@@ -132,14 +112,14 @@ body ul {
 }
 
 #profissional-monthly {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 #profissional-annually {
     display: none;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 .card-basic {
@@ -177,7 +157,6 @@ body ul {
     align-items: center;
     justify-content: center;
     color: hsl(232, 13%, 33%);
-    padding: 10px;
     background-color: #ffffff;
 }
 
@@ -200,20 +179,20 @@ body ul {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    padding: 10px 0 30px 0;
+    padding: 0px 0 30px 0;
     border-radius: 10px;
     color: #ffffff;
     background: linear-gradient(120deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
 }
 
 .card-profissional h2 {
-    margin-top: 32px;
+    margin-top: 2.1rem;
+    font-size: 15px;
 }
 
 
 .card-profissional .content {
     width: 90%;
-    margin-top: 30px;
 }
 
 .card-profissional .content ul hr {
@@ -225,7 +204,6 @@ body ul {
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .card-profissional button {
@@ -274,7 +252,6 @@ body ul {
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .card-master button {
@@ -292,37 +269,3 @@ body ul {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-/* ------ Media queries and responsive ------ */
-@media screen and (min-width: 1080px) {
-   .container {
-    flex-direction: column;
-   }
-}
-
-@media screen and (min-width: 411px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .container h3 {
-        flex-direction: column;
-    }
-
-    .container .toggle-content{
-        flex-direction: row;
-        margin-bottom: 200px;
-        height: 20px;
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        margin-top: 200px;
-        
-    }
-
-    .card-basic .card-profissional .card-master {
-        margin-bottom: 200px;
-    }
-}

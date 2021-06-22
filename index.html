@@ -8,22 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <div class="img-background-top"></div>
-        <div class="img-background-botton"></div>
         <h3>Our Pricing</h3>
         <div class="toggle-content">
             <span>Annually</span>
-            <input type="checkbox" id="toggle" class="toggle">
+            <input type="checkbox" id="toggle" class="toggle" checked>
             <label for="toggle"></label>
             <span>Monthly</span>
         </div>
         <div class="cards">
             <div class="card-basic">
                 <h2>Basic</h2>
-                <div class="monthly">&dollar;19.99</div>
-                <div class="annually">&dollar;199.99</div>
+                <div class="monthly" id="basic-monthly">&dollar;19.99</div>
+                <div class="annually" id="basic-annually">&dollar;199.99</div>
                 <div class="content">
                     <ul>
                         <hr>
@@ -39,8 +36,8 @@
             </div>
             <div class="card-profissional">
                 <h2>Professional</h2>
-                <div class="monthly">&dollar;24.99</div>
-                <div class="annually">&dollar;249.99</div>
+                <div class="monthly" id="profissional-monthly">&dollar;24.99</div>
+                <div class="annually" id="profissional-annually">&dollar;249.99</div>
                 <div class="content">
                     <ul>
                         <hr>
@@ -56,8 +53,8 @@
             </div>
             <div class="card-master">
                 <h2>Master</h2>
-                <div class="monthly">&dollar;39.99</div>
-                <div class="annually">&dollar;399.99</div>
+                <div class="monthly" id="master-monthly">&dollar;39.99</div>
+                <div class="annually" id="master-annually">&dollar;399.99</div>
                 <div class="content">
                     <ul>
                         <hr>
@@ -72,21 +69,11 @@
                 <button>Learn More</button>
             </div>
         </div>
-    
-
-  
-  
-
-  
-
-
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/wesllenalves">Wesllen Alves de Sousa</a>.
-  </div>
-</div>
+        <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/wesllenalves">Wesllen Alves de Sousa</a>.
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
